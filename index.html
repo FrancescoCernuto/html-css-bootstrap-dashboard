@@ -31,6 +31,94 @@
      <link rel="stylesheet" href="./css/style.css" />
    </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./img/duck.png"
+                alt="Logo"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarSupportedContent"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Catalogo Libri</a
+                >
+                <a class="nav-link" href="#">Anagrafica Utenti</a>
+                <a class="nav-link" href="#">Storico Prestiti</a>
+                <a class="nav-link" href="#">Help</a>
+              </div>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2 bg-light"
+                  type="search"
+                  placeholder="Cerca..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-light" type="submit">Cerca</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="my-3">
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col col-lg-9">
+                <section class="mb-3">
+                  <div class="row">
+                    <div class="col">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <h1 class="d-inline-block mb-0">Catalogo Libri</h1>
+                        <button
+                          type="button"
+                          class="btn btn-primary d-inline-block"
+                        >
+                          Aggiungi Libro
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Titolo</th>
+                      <th scope="col" class="d-none d-md-table-cell">
+                        Data prestito
+                      </th>
+                      <th scope="col">Stato</th>
+                      <th scope="col">Azioni</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>I pilastri della terra</td>
+                      <td class="d-none d-md-table-cell">-</td>
+                      <td>
+                        <span class="badge text-bg-success">Disponibile</span>
+                      </td>
+                      <td>
      
 </body>
 </html>
